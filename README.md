@@ -52,6 +52,10 @@ Apache listens on port 80. You can access the application using the following UR
 ```bash
 http://<ec2-instance-public-ip>
 ```
+To check the status of apache2 service, use the following command
+```bash
+sudo systemctl status apache2
+```
 If the service is not running, start the service.
 
 If the security group is not allowing inbound http traffic, go to the inbound rules in the security group and allow http traffic.
